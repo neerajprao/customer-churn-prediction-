@@ -16,24 +16,26 @@ Churn Predictor is a powerful web-based application that predicts customer churn
 - Built using Python, HTML, CSS, JavaScript, Flask
 
 ## Project Structure
+
+```
 churn-predictor/
 │
-├── app/ # Flask backend
-│ ├── static/ # CSS/JS files
-│ ├── templates/ # HTML templates
-│ ├── models/ # Pre-trained ML/DL/QML models (.pt, .pkl)
-│ ├── routes.py # Flask route handlers
-│ └── utils.py # Helper functions
+├── app/                       # Flask backend
+│   ├── static/                # CSS/JS files
+│   ├── templates/             # HTML templates
+│   ├── models/                # Pre-trained ML/DL/QML models (.pt, .pkl)
+│   ├── routes.py              # Flask route handlers
+│   └── utils.py               # Helper functions
 │
-├── quantum/ # Quantum model training scripts
-│ └── hybrid_model.ipynb # VQC training using PennyLane
+├── quantum/                   # Quantum model training scripts
+│   └── hybrid_model.ipynb     # VQC training using PennyLane
 │
-├── notebooks/ # EDA, preprocessing, training notebooks
+├── notebooks/                 # EDA, preprocessing, training notebooks
 │
-├── requirements.txt # Project dependencies
-├── README.md # Project documentation
-└── run.py # Entry point to run the Flask app
-
+├── requirements.txt           # Project dependencies
+├── README.md                  # Project documentation
+└── run.py                     # Entry point to run the Flask app
+```
 
 ## Input Features
 
@@ -78,41 +80,48 @@ The models use the following customer features:
 ```bash
 git clone https://github.com/yourusername/churn-predictor.git
 cd churn-predictor
+```
 
-## Create a virtual environment:
+2. Create a virtual environment:
+
+```bash
 python -m venv venv
 source venv/bin/activate  # For Windows: venv\Scripts\activate
+```
 
-## Install dependencies:
+3. Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
-## Run the Flask app:
+4. Run the Flask app:
+
+```bash
 python run.py
+```
 
-Open your browser and go to http://localhost:5000
+5. Open your browser and go to `http://localhost:5000`
 
-Sample Output
-Predicted churn probability (0 to 1)
+## Sample Output
 
-Final classification: Will Churn or Will Not Churn
+- Predicted churn probability (0 to 1)
+- Final classification: Will Churn or Will Not Churn
+- Option to view model-specific predictions
 
-Option to view model-specific predictions
+## Future Enhancements
 
-Future Enhancements
-Add Explainability with SHAP or LIME
+- Add Explainability with SHAP or LIME
+- Deploy on Streamlit Cloud or Hugging Face Spaces
+- Integrate real-time data ingestion from a CRM or database
+- Expand QML backend to support Qiskit on IBM Q Experience
 
-Deploy on Streamlit Cloud or Hugging Face Spaces
+## Author
 
-Integrate real-time data ingestion from a CRM or database
-
-Expand QML backend to support Qiskit on IBM Q Experience
-
-Author
-Neeraj P Rao
-Second-Year CSE Student at RV University
+Neeraj P Rao  
+Third-Year CSE Student at RV University  
 Machine Learning, Quantum AI, and Full-Stack Enthusiast
 
-License
+## License
+
 This project is licensed under the MIT License.
-
-
